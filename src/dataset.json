@@ -4,8 +4,7 @@
       { "content": "簡単に自己紹介してほしい", "nextId": "introduction" },
       { "content": "学生時代の事を知りたい", "nextId": "school_days" },
       { "content": "現職の仕事内容を知りたい", "nextId": "job" },
-      { "content": "このチャットボットアプリを作ったきっかけ", "nextId": "chatbot_app" },
-      { "content": "問い合わせる", "nextId": "contact" }
+      { "content": "このチャットボットを作ったきっかけ", "nextId": "chatbot_app" }
     ],
     "question": "ご用件は何でしょうか？"
   },
@@ -67,8 +66,9 @@
   "chatbot_app": {
     "answers": [
       { "content": "ソースコードを見る", "nextId": "https://github.com/Handai-Yamato/chatbot-app" },
+      { "content": "問い合わせる", "nextId": "contact" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "ReactでWeb開発をしたい!という目標があり、勉強も兼ねてチャットボットを作ってみました。Reactについては、まだまだ理解不足だと感じています。"
+    "question": "ReactでWeb開発をしたい!という目標があり、勉強も兼ねてチャットボットを作ってみました。SlackのIncoming Webhookを利用して「問い合わせる」が来ると自分のSlackに通知を送るようにしました。Reactについては、まだまだ理解不足だと感じています。"
   }
 }
