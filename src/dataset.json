@@ -1,82 +1,74 @@
 {
   "init": {
     "answers": [
-      { "content": "仕事を依頼したい", "nextId": "job_offer" },
-      { "content": "エンジニアのキャリアについて相談したい", "nextId": "consultant" },
-      { "content": "学習コミュニティについて知りたい", "nextId": "community" },
-      { "content": "お付き合いしたい", "nextId": "dating" }
+      { "content": "簡単に自己紹介してほしい", "nextId": "introduction" },
+      { "content": "学生時代の事を知りたい", "nextId": "school_days" },
+      { "content": "現職の仕事内容を知りたい", "nextId": "job" },
+      { "content": "このチャットボットアプリを作ったきっかけ", "nextId": "chatbot_app" },
+      { "content": "問い合わせる", "nextId": "contact" }
     ],
-    "question": "こんにちは！🐯トラハックへのご用件はなんでしょうか？"
+    "question": "ご用件は何でしょうか？"
   },
-  "job_offer": {
+  "school_days": {
     "answers": [
-      { "content": "Webサイトを制作してほしい", "nextId": "website" },
-      { "content": "Webアプリを開発してほしい", "nextId": "webapp" },
-      { "content": "自動化ツールを作ってほしい", "nextId": "automation_tool" },
-      { "content": "その他", "nextId": "other_jobs" }
-    ],
-    "question": "どのようなお仕事でしょうか？"
-  },
-  "website": {
-    "answers": [
-      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "高校はどこ？", "nextId": "highschool" },
+      { "content": "部活は何をしていた？", "nextId": "extracurricular_activities" },
+      { "content": "学生時代は何を頑張っていた？", "nextId": "doing_my_best" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "Webサイト細作についてですね。コチラからお問い合わせできます。"
+    "question": "学生時代に関して何を知りたいですか？"
   },
-  "webapp": {
+  "highschool": {
     "answers": [
-      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "1つ前の質問に戻る", "nextId": "school_days" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "Webアプリ開発についてですね。コチラからお問い合わせできます。"
+    "question": "宮崎県立都城農業高校の農業土木科に通っていました。"
   },
-  "automation_tool": {
+  "extracurricular_activities": {
     "answers": [
-      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "1つ前の質問に戻る", "nextId": "school_days" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "自動化ツール開発についてですね。コチラからお問い合わせできます。"
+    "question": "小学3年生から高校までの9年間、バスケットボールをしていました。中学時代に県大会で優勝したり、九州大会に出場したこともあります。"
   },
-  "other_jobs": {
+  "doing_my_best": {
     "answers": [
-      { "content": "問い合わせる", "nextId": "contact" },
+      { "content": "1つ前の質問に戻る", "nextId": "school_days" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "その他についてですね。コチラからお問い合わせできます。"
+    "question": "公務員を目指して農業高校（農業土木科）へ入学したこともあり、現役合格を目指して公務員試験の勉強を頑張っていました。"
   },
-  "consultant": {
+  "introduction": {
     "answers": [
+      { "content": "農林水産省ではどんな仕事をしていた？", "nextId": "maff" },
       {
-        "content": "YouTubeで動画を見る",
-        "nextId": "https://www.youtube.com/channel/UC-bOAxx-YOsviSmqh8COR0w"
+        "content": "グルメ巡りについて知りたい（インスタを見る）",
+        "nextId": "https://www.instagram.com/hndiymt/"
       },
-      { "content": "学習コミュニティについて知りたい", "nextId": "community" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "トラハックは普段からYouTubeでキャリアについて発信しています。また、僕が運営するエンジニア向け学習コミュニティ内でも相談に乗っていますよ。"
+    "question": "平成10年生まれ、宮崎生まれ宮崎育ちの24歳。三股中学校を卒業後、都城農業高校へ入学しました。高校卒業後は農林水産省へ入り関西地方で５年勤めた後、Webコーダーに転職しました。趣味はガジェット集めとグルメ巡りです。"
   },
-  "community": {
+  "maff": {
     "answers": [
-      { "content": "どんな活動をしているの？", "nextId": "community_activity" },
-      { "content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/" },
+      { "content": "1つ前の質問に戻る", "nextId": "introduction" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "2020年3月から学習コミュニティを始めました！🎉Webエンジニアへの転職を目指す人向けに、プログラミングを教えたりキャリアの相談に乗っています。"
+    "question": "主に公共工事の発注や監督、設計を行っており、建設会社の方達とお仕事をさせていただく機会が多くありました。"
   },
-  "community_activity": {
+  "job": {
     "answers": [
-      { "content": "さらに詳細を知りたい", "nextId": "https://youtu.be/tIzE7hUDbBM" },
-      { "content": "コミュニティに参加したい", "nextId": "https://torahack.web.app/community/" },
+      { "content": "（株）CRMラボのHPを見る", "nextId": "https://crmlab.jp/" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "フロントエンド向けの教材の提供、キャリアや勉強法に関するメルマガの配信、週1のオンライン作業会などを開催しています！\n詳細はYouTube動画で紹介しています。"
+    "question": "現在、株式会社CRMラボでコーダーとして働いています。LPやWEBサイトのコーディング以外にもECサイト（shopify、楽天など）の運営代行に携わっており、商品の編集や販促の企画を発案したりしています。"
   },
-  "dating": {
+  "chatbot_app": {
     "answers": [
-      { "content": "DMする", "nextId": "https://twitter.com/torahack_" },
+      { "content": "ソースコードを見る", "nextId": "https://github.com/Handai-Yamato/chatbot-app" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "まずは一緒にランチでもいかがですか？DMしてください😘"
+    "question": "ReactでWeb開発をしたい!という目標があり、勉強も兼ねてチャットボットを作ってみました。Reactについては、まだまだ理解不足だと感じています。"
   }
 }
