@@ -42,12 +42,12 @@
     "answers": [
       { "content": "農林水産省ではどんな仕事をしていた？", "nextId": "maff" },
       {
-        "content": "グルメ巡りについて知りたい（インスタを見る）",
+        "content": "グルメ巡りについて（インスタを見る）",
         "nextId": "https://www.instagram.com/hndiymt/"
       },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
-    "question": "平成10年生まれ、宮崎生まれ宮崎育ちの24歳。三股中学校を卒業後、都城農業高校へ入学しました。高校卒業後は農林水産省へ入り関西地方で５年勤めた後、Webコーダーに転職しました。趣味はガジェット集めとグルメ巡りです。"
+    "question": "平成10年生まれ、宮崎県生まれ宮崎県育ちの24歳。三股中学校を卒業後、都城農業高校へ入学しました。高校卒業後は農林水産省へ入り関西地方で５年勤めた後、Webコーダーに転職しました。\n趣味はガジェット集めとグルメ巡りです。グルメ巡りについてはインスタに写真を投稿しています。"
   },
   "maff": {
     "answers": [
@@ -66,7 +66,6 @@
   "chatbot_app": {
     "answers": [
       { "content": "ソースコードを見る", "nextId": "https://github.com/Handai-Yamato/chatbot-app" },
-      { "content": "問い合わせる", "nextId": "contact" },
       { "content": "最初の質問に戻る", "nextId": "init" }
     ],
     "question": "ReactでWeb開発をしたい!という目標があり、勉強も兼ねてチャットボットを作ってみました。SlackのIncoming Webhookを利用して「問い合わせる」が来ると自分のSlackに通知を送るようにしました。Reactについては、まだまだ理解不足だと感じています。"
