@@ -3,7 +3,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import NoProfile from "../assets/img/no-profile.png";
-import Torahack from "../assets/img/torahack.png";
+import Icon from "../assets/img/icon.jpg";
 
 const Chat = (props) => {
   const isQuestion = props.type === "question";
@@ -11,7 +11,7 @@ const Chat = (props) => {
 
   return (
     <ListItem className={classes}>
-      <ListItemAvatar>{isQuestion ? <Avatar alt="icon" src={Torahack} /> : <Avatar alt="icon" src={NoProfile} />}</ListItemAvatar>
+      <ListItemAvatar>{isQuestion ? <Avatar alt="icon" src={Icon} /> : <Avatar alt="icon" src={NoProfile} />}</ListItemAvatar>
       <div className="p-chat__bubble">{props.text}</div>
     </ListItem>
   );
